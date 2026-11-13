@@ -1,0 +1,19 @@
+# Copy to ~/.config/wow-addons/config.toml
+
+# Your game's AddOns folder. For Battle.net added to Steam as a non-Steam game
+# under Proton, it lives inside that shortcut's compatdata prefix, e.g.:
+addons_dir = "~/.local/share/Steam/steamapps/compatdata/<APPID>/pfx/drive_c/Program Files (x86)/World of Warcraft/_forever_/Interface/AddOns"
+
+# CurseForge game-version type to pull files for, matched by name
+# (e.g. "Forever", "Retail", "Classic"). If it picks the wrong one,
+# run `wow-addons.py versions` and set version_type_id instead.
+flavor = "Forever"
+# version_type_id = 12345
+
+# release | beta | alpha
+channel = "release"
+
+# CurseForge slugs (last part of the addon's URL) or numeric project IDs.
+addons = [
+  "tradeskill-master",
+]

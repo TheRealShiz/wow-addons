@@ -1,0 +1,9 @@
+[Unit]
+Description=Update WoW addons from CurseForge
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/wow-addons.py update
+Nice=10

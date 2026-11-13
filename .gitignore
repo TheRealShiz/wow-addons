@@ -1,0 +1,7 @@
+api_key
+*.key
+.env
+config.toml
+state.json
+__pycache__/
+*.pyc
