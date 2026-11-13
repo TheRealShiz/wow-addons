@@ -69,6 +69,31 @@ systemctl --user enable --now wow-addons.timer
 journalctl --user -u wow-addons     # see what it did
 ```
 
+## CrateMath (in-game addon)
+
+`addons/CrateMath` is a small WoW: Forever addon that prices Waylaid Crate
+bundles in gold per Merchant's Favor, using TSM prices (Auctionator as a
+fallback).
+
+- Hover a Waylaid Crate, in your bags or on the Auction House, to see the
+  cheapest bundle that fills it and what each MF costs you.
+- `/cm` ranks every known bundle by gold per MF.
+- `/cm targets` shows what the MF recipes we're saving toward cost in gold.
+- `/cm check` confirms the item IDs in `Data.lua` match the game.
+- Crate and Craftsman's Writ tooltips are recorded in the `CrateMath`
+  SavedVariables file, so bundle lists and writ requests can be filled in
+  from real data. `/cm log` shows the counts.
+
+Bundle data comes from beta-era community guides and is incomplete (Artisan
+rewards, Herbs/Curiosities/Parts bundles). Edit `Data.lua` as you learn more.
+
+Install by linking it into your AddOns folder, so `git pull` updates it:
+
+```bash
+ln -s "$PWD/addons/CrateMath" \
+  ~/.local/share/Steam/steamapps/compatdata/<APPID>/pfx/drive_c/Program\ Files\ \(x86\)/World\ of\ Warcraft/_forever_/Interface/AddOns/CrateMath
+```
+
 ## License
 
 MIT

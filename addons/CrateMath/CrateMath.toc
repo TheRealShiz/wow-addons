@@ -1,0 +1,10 @@
+## Interface: 16001
+## Title: CrateMath
+## Notes: Cheapest way to fill Waylaid Crates for Merchant's Favor, priced with TSM or Auctionator.
+## Author: TheRealShiz
+## Version: 0.1.0
+## SavedVariables: CrateMathDB
+## OptionalDeps: TradeSkillMaster, Auctionator
+
+Data.lua
+Core.lua
