@@ -14,6 +14,8 @@ flavor = "Forever"
 channel = "release"
 
 # CurseForge slugs (last part of the addon's URL) or numeric project IDs.
+# Leave TradeSkillMaster out if you use a TSM desktop app (official or
+# tsm-app-linux): it updates TSM itself, and two updaters would fight.
 addons = [
-  "tradeskill-master",
+  "auctionator",
 ]

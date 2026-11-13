@@ -28,6 +28,12 @@ almost daily, so updating by hand isn't practical.
   only records what was installed locally.
 - Personal use: about 20 addons, a few runs a day.
 
+### TradeSkillMaster
+
+If you run a TSM desktop app, such as
+[tsm-app-linux](https://github.com/exceptionptr/tsm-app-linux), let it manage
+TSM and its AppHelper, and leave `tradeskill-master` out of this tool's config.
+
 ## Requirements
 
 - Python 3.11+ (standard library only)
