@@ -2,7 +2,7 @@
 ## Title: CrateMath
 ## Notes: Cheapest way to fill Waylaid Crates for Merchant's Favor, priced with TSM or Auctionator.
 ## Author: TheRealShiz
-## Version: 0.2.0
+## Version: 0.2.1
 ## SavedVariables: CrateMathDB
 ## OptionalDeps: TradeSkillMaster, Auctionator
 

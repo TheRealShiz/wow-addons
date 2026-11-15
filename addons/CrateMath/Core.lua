@@ -285,6 +285,11 @@ local function onItemTooltip(tooltip, data)
 
   local crate = CM.crateFor(name)
   tooltip:AddLine(" ")
+  if name:find("^Sealed .*Crate") then
+    -- Filled crates are soulbound (confirmed 2026-11-15): turn-in only.
+    tooltip:AddLine("|cff33ccffCrateMath|r: soulbound - turn in at Dokimi, Crossroads", 0.8, 0.8, 0.8)
+    return
+  end
   if not crate then
     tooltip:AddLine("|cff33ccffCrateMath|r: crate type not in Data.lua (recorded)", 0.8, 0.8, 0.8)
     return
